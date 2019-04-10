@@ -1,0 +1,22 @@
+namespace expo;
+
+class Exhibition {
+	String id;
+	String name;
+	String description;
+	User[] creators;
+	String[] photos;
+}
+
+class User {
+	String id;
+	String name;
+	String type;
+}
+
+class Vote {
+	int weight;
+
+	1 -- 1 User;
+	1 -- 1 Exhibition;
+}
